@@ -30,6 +30,7 @@ const App = () => {
       <UserContext.Provider value={{user, setUser}}>
         <Header />
         <Switch>
+          <Route exact path='/' component={Home} />
           <Route exact path='/github_profile_viewer' component={Home} />
           <Route exact path='/signin' component={Signin} />
           <Route exact path='/signup' component={Signup} />
